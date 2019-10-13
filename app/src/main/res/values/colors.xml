@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    // Color Theme
+    <color name="colorPrimaryDark">#360046</color>  // First Top Color
+    <color name="colorPrimary">#B0960064</color>      // Second Top Color
+
+    <color name="colorAccent">#FF4081</color>
+
+    Button Colors
+    <color name="Welcome_Button">#D81B60</color>
+</resources>
+
+    <!--
+    <color name="Login">
+            <gradient
+                android:type="exponential"
+                android:angle="0"
+                android:startColor="#520080"
+                android:endColor="#800078" />
+        </color>
+    -->
