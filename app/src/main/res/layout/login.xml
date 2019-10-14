@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:background="@mipmap/ic_login_backround"
         android:layout_width="match_parent"
@@ -12,36 +11,39 @@
         android:gravity="center"
         android:padding="20dp">
 
-        LOGO
+        <!--LOGO -->
         <ImageView
+            android:contentDescription="@string/LOGO"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="370dp"
             android:src="@mipmap/ic_login_enter_city_graphic_round" />
 
-        EMAIL BOX
-        <EditText
+        <!-- EMAIL BOX -->
+        <EditText android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/login_shape_email"
             android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
             android:drawablePadding="10dp"
-            android:hint="Email"
+            android:hint="@string/Username"
             android:padding="15dp"
             android:textColor="@color/black"
             android:textColorHighlight="@color/black"
             android:textColorHint="@color/black" />
 
-        PASSWORD BOX
-        <EditText
+        <!-- PASSWORD BOX -->
+        <EditText android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="15dp"
             android:background="@drawable/login_shape_email"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
             android:drawableLeft="@drawable/ic_lock_black_24dp"
             android:drawablePadding="10dp"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textColorHighlight="@color/black"/>
@@ -51,33 +53,32 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            REMEMBER ME BOX
+            <!-- REMEMBER ME BOX -->
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remember Me"
+                android:text="@string/Remember_Me"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="0dp"
                 android:textColor="@color/black"
-                android:buttonTint="@color/black"
                 android:checked="true"/>
 
-            FORGOT PASSWORD BOX
+            <!-- FORGOT PASSWORD BOX -->
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Forget Password"
+                android:layout_height="match_parent"
+                android:text="@string/Forgot_Password"
                 android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="0dp"
                 android:textColor="@color/black"
                 android:drawableLeft="@drawable/ic_unlock_open_black_24dp"
+                android:drawableStart="@drawable/ic_unlock_open_black_24dp"
                 android:drawablePadding="6dp"
                 android:padding="4dp"/>
-
 
         </LinearLayout>
         <RelativeLayout
@@ -88,21 +89,21 @@
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log In"
+            android:text="@string/Login"
             android:shadowColor="@android:color/transparent"
             android:padding="15dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="0dp"
-            android:background="@drawable/login_shape_login"
-            android:onClick="goToMain" />
+            android:background="@drawable/login_shape_login"/>
         </RelativeLayout>
 
         <Button
+            android:id="@+id/registar_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="@string/Sign_Up"
             android:shadowColor="@android:color/transparent"
             android:padding="15dp"
             android:layout_marginRight="10dp"
