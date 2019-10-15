@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
     Overall Theme
     <color name="colorPrimaryDark">#360046</color>  // First Top Color
     <color name="colorPrimary">#B0960064</color>      // Second Top Color
